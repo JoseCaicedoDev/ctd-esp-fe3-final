@@ -2,6 +2,26 @@
 
 Examen Final de Frontend III
 
+## Team
+- José Caicedo
+- Julie Serrano
+
+## Installation
+
+### Clonar proyecto
+
+Clonar el repositorio
+```bash
+$ git clone <project>
+```
+
+### npm project
+
+Instalar el proyecto de react con:
+```bash
+$ npm install <project>
+```
+
 ## Indice
 
 #### Home
