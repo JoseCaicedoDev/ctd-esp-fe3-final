@@ -5,7 +5,6 @@ const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
-  const formRef = useRef(null);
 
   const validateForm = () => {
     if (name.length < 6) {
@@ -23,13 +22,14 @@ const Form = () => {
     event.preventDefault();
     if (validateForm()) {
       alert(`Thanks ${name}, we will contact you as soon as possible by email`);
-      formRef.current.reset();
+      setName("");
+      setEmail("");
     }
   };
 
   return (
     <div className="flex flex-col max-w-xs m-auto">
-      <form className="flex flex-col w-full" onSubmit={handleSubmit} ref={formRef}>
+      <form className="flex flex-col w-full" onSubmit={handleSubmit}>
         <label htmlFor="name" className="dark:text-gray-100">Full Name</label>
         <input className="border
         border-gray-400 dark:border-red-300 p-2 rounded-md"
