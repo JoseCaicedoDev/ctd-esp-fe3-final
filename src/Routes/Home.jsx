@@ -18,7 +18,7 @@ const Home = () => {
   }, [dispatch])
 
   return (
-    <main className='h-screen'>
+    <main className=''>
       <h1 className='py-4 text-3xl font-semibold
       dark:text-gray-100'>Home</h1>
       <div className='card-grid'>

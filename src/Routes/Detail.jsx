@@ -26,24 +26,25 @@ const Detail = () => {
   return (
     <div className='h-screen'>
       <h1 className='py-4 text-xl font-semibold dark:text-white'>{`Detail Dentist ${id}`} </h1>
-      <table className='table-fixed max-w-2xl mx-auto
-        dark:bg-red-100'>
+      <table className='table-fixed w-1/2 mx-auto
+      bg-gray-200
+        dark:bg-red-100 border-2 p-2'>
         <tbody>
           <tr>
-            <td>Name </td>
-            <td>{name}</td>
+            <td className='p-2'>Name </td>
+            <td className='p-2'>{name}</td>
           </tr>
           <tr>
-            <td>Email </td>
-            <td>{email}</td>
+            <td className='p-2'>Email </td>
+            <td className='p-2'>{email}</td>
           </tr>
           <tr>
-            <td>Phone </td>
-            <td>{phone}</td>
+            <td className='p-2'>Phone </td>
+            <td className='p-2'>{phone}</td>
           </tr>
           <tr>
-            <td>WebSite </td>
-            <td>{website}</td>
+            <td className='p-2'>WebSite </td>
+            <td className='p-2'>{website}</td>
           </tr>
         </tbody>
       </table >
