@@ -18,15 +18,17 @@ const Home = () => {
   }, [dispatch])
 
   return (
-    <main className="" >
-      <h1 className='my-4 text-xl font-semibold'>Home</h1>
+    <main className='h-screen'>
+      <h1 className='py-4 text-3xl font-semibold
+      dark:text-gray-100'>Home</h1>
       <div className='card-grid'>
         {/* Aqui deberias renderizar las cards */}
         {
           state.data.map((dentist) => <Card name={dentist.name}
             username={dentist.username}
             key={dentist.id}
-            id={dentist.id} />)
+            id={dentist.id}
+            favoriteHidden={true} />)
         }
       </div>
     </main>

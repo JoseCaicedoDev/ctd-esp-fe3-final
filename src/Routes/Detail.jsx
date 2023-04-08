@@ -20,19 +20,36 @@ const Detail = () => {
   if (!dentist) {
     return <p>Loading...</p>;
   }
-  const { name, email, phone, website } = dentist
+  const { name, email, phone, website, id } = dentist
   console.log("den", dentist)
 
   return (
-    <>
-      <h1>Detail Dentist id </h1>
-      <p>{name}</p>
-      <p>{email}</p>
-      <p>{phone}</p>
-      <p>{website}</p>
+    <div className='h-screen'>
+      <h1 className='py-4 text-xl font-semibold dark:text-white'>{`Detail Dentist ${id}`} </h1>
+      <table className='table-fixed max-w-2xl mx-auto
+        dark:bg-red-100'>
+        <tbody>
+          <tr>
+            <td>Name </td>
+            <td>{name}</td>
+          </tr>
+          <tr>
+            <td>Email </td>
+            <td>{email}</td>
+          </tr>
+          <tr>
+            <td>Phone </td>
+            <td>{phone}</td>
+          </tr>
+          <tr>
+            <td>WebSite </td>
+            <td>{website}</td>
+          </tr>
+        </tbody>
+      </table >
       {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
       {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
-    </>
+    </div>
   )
 }
 

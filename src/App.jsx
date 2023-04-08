@@ -13,7 +13,7 @@ function App() {
   const { state } = useContext(ContextGlobal)
   console.log("dark", state.theme)
   return (
-    <div className={`${state.theme ? "dark" : ""}`}>
+    <div className={`${state.theme ? "dark bg-gray-400" : ""}`}>
       <Routes>
         <Route element={<Navbar />}>
           <Route element={<Footer />}>

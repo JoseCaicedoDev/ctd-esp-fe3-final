@@ -12,16 +12,17 @@ const Footer = () => {
     <>
       <Outlet />
       <footer className='mt-6'>
-        <p className='bg-red-600 w-full flex
-        justify-center h-11 font-semibold'>Powered by</p>
+        <p className='bg-gray-200 dark:bg-red-500 w-full flex
+        justify-center h-11 font-semibold dark:text-white'>Powered by</p>
         <div className='flex items-center justify-around
-        my-2'>
+        py-2'>
           <img src={imgDH} alt='DH-logo'
             className='w-1/5' />
           <div className='flex gap-4'>
             <a href="#" target='_blank'>
               <img src={iconFacebook} alt='icon facebook'
-                className='bg-gray-500 w-6 h-6 rounded-sm' />
+                className='bg-gray-500 w-6 h-6
+                rounded-sm' />
             </a>
             <a href="#" target='_blank'>
               <img src={iconInstragram} alt='icon instragram'

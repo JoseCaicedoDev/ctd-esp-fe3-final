@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <div className="flex flex-row items-center
         gap-3">
-          <ul className="flex text-sm gap-3">
+          <ul className="flex text-sm gap-6">
             <li>
               <Link to="/" className="dark:text-white hover:text-gray-400
               dark:hover:text-gray-300">
